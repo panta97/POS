@@ -1,0 +1,2 @@
+FLASK_ENV=development
+CLIENT_HOST=http://localhost:3000
