@@ -1,6 +1,8 @@
 {
     "files.exclude": {
-        "**/__pycache__": true
+        "**/__pycache__": true,
+        "dist": true,
+        "env": true
       },
     "python.formatting.provider": "black"
 }
