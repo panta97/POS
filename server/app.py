@@ -15,7 +15,6 @@ if not IS_DEV:
 @app.route("/<path:path>")
 def index(path):
     if IS_DEV:
-        print(request.path)
         result = proxy.proxy(os.environ["CLIENT_HOST"], request.path)
         return result
     return send_from_directory(app.static_folder, path)
