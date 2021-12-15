@@ -11,9 +11,9 @@ if not IS_DEV:
     app = Flask(__name__, static_folder="dist")
 
 
-@app.route("/", defaults={"path": "index.html"})
-@app.route("/<path:path>")
-def index(path):
+@app.route("/pos/", defaults={"path": "index.html"})
+@app.route("/pos/<path:path>")
+def client(path):
     if IS_DEV:
         result = proxy.proxy(os.environ["CLIENT_HOST"], request.path)
         return result
