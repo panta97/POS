@@ -5,6 +5,10 @@
 		},
 		{
 			"path": "client"
+		},
+		{
+			"path": ".",
+			"name": "root"
 		}
 	],
 	"settings": {}
