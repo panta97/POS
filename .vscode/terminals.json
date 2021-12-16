@@ -1,0 +1,22 @@
+{
+    "autorun": false,
+    "terminals": [
+        {
+            "name": "back-end",
+            "open": true,
+            "commands": [
+                "cd server",
+                "source env/bin/activate",
+                "python app.py"
+            ]
+        },
+        {
+            "name": "front-end",
+            "open": true,
+            "commands": [
+                "cd client",
+                "yarn dev"
+            ]
+        }
+    ]
+}
